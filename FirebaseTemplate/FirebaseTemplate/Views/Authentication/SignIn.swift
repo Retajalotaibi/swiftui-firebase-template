@@ -26,7 +26,7 @@ struct SignIn: View {
                     alertError = error.debugDescription
                     alertShown = true 
                 }
-            }
+            }.frame(width:300, height: 40).background(Color("waleed")).foregroundColor(.white).clipShape(Capsule())
             NavigationLink("Don't have an account?", destination: SignIn())
         }
         .navigationTitle("Sign in")

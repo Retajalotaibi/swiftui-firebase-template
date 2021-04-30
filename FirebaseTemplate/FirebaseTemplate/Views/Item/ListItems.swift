@@ -12,16 +12,24 @@ struct ListItems: View {
     @EnvironmentObject var itemsEnv: ItemsEnv
     
     var body: some View {
-        List(itemsEnv.items, id: \.self){ item in
-            VStack(alignment: .leading){
-                Text(item.name).font(.title3)
-                Text("\(item.price)").font(.headline).foregroundColor(.red)
-            }
+        List(itemsEnv.course, id: \.self){ item in
+            NavigationLink(
+                destination: coursesDetalis(currentCorses: item),
+                label: {
+                    VStack(alignment: .leading){
+                        Text(item.name).fontWeight(.bold)
+                        HStack {
+                            Text("start at \(item.startDay)")
+                            Text("end at \(item.endDay)")
+                        }
+                    }
+                })
+            
         }
-        .navigationTitle("Items List")
+        .navigationTitle("courses List")
         .onAppear(perform: itemsEnv.loadItems)
     }
-
+    
 }
 
 struct ListItems_Previews: PreviewProvider {

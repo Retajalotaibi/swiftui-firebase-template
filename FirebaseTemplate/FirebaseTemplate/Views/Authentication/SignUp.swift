@@ -13,15 +13,21 @@ struct SignUp: View {
     @State var password = ""
     @EnvironmentObject var env: FirebaseEnv
     var body: some View {
-        Form{
-            TextField("first name", text: $user.firstName).keyboardType(.default)
-            TextField("last name", text: $user.lastName).keyboardType(.default)
-            TextField("email", text: $user.email).keyboardType(.emailAddress)
-            SecureField("password", text: $password)
+  
+        VStack (spacing: 20){
+           
+            VStack {
+                TextField("first name", text: $user.firstName).keyboardType(.default).padding(.bottom, 20)
+                TextField("last name", text: $user.lastName).keyboardType(.default).padding(.bottom, 20)
+                TextField("email", text: $user.email).keyboardType(.emailAddress).padding(.bottom, 20)
+                SecureField("password", text: $password).padding(.bottom, 20)
+            }.padding()
+
             Button("Sign up"){
                 env.signUp(user: user, password: password)
-            }
-        }
+            }.frame(width:300, height: 40).background(Color("waleed")).foregroundColor(.white).clipShape(Capsule())
+            Spacer()
+        }.padding().padding(.top, 40)
         .navigationTitle("Sign up")
     }
 }

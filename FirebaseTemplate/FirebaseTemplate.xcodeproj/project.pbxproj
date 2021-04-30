@@ -7,7 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D26B2C612469F2A200470CA2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D26B2C602469F2A200470CA2 /* GoogleService-Info.plist */; };
+		67BFDE1A2598DFB600B0E6CB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67BFDE192598DFB600B0E6CB /* GoogleService-Info.plist */; };
+		67D7C0DB263C5712004BF0A1 /* coursesDetalis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D7C0DA263C5711004BF0A1 /* coursesDetalis.swift */; };
+		67D7C0E7263C92DA004BF0A1 /* MultiDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D7C0DE263C92DA004BF0A1 /* MultiDatePicker.swift */; };
+		67D7C0E8263C92DA004BF0A1 /* MDPMonthYearPickerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D7C0E0263C92DA004BF0A1 /* MDPMonthYearPickerButton.swift */; };
+		67D7C0E9263C92DA004BF0A1 /* MDPDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D7C0E1263C92DA004BF0A1 /* MDPDayView.swift */; };
+		67D7C0EA263C92DA004BF0A1 /* MDPMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D7C0E2263C92DA004BF0A1 /* MDPMonthView.swift */; };
+		67D7C0EB263C92DA004BF0A1 /* MDPContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D7C0E3263C92DA004BF0A1 /* MDPContentView.swift */; };
+		67D7C0EC263C92DA004BF0A1 /* MDPMonthYearPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D7C0E4263C92DA004BF0A1 /* MDPMonthYearPicker.swift */; };
+		67D7C0ED263C92DA004BF0A1 /* MDPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D7C0E5263C92DA004BF0A1 /* MDPModel.swift */; };
+		67D7C0EE263C92DA004BF0A1 /* MDPDayOfMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D7C0E6263C92DA004BF0A1 /* MDPDayOfMonth.swift */; };
 		D2C079A2259813E70053EDFD /* MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C079A1259813E70053EDFD /* MainApp.swift */; };
 		D2C079AD259815F30053EDFD /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C079AC259815F30053EDFD /* SignIn.swift */; };
 		D2C079B2259816BD0053EDFD /* FirebaseEnv.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C079B1259816BD0053EDFD /* FirebaseEnv.swift */; };
@@ -62,9 +71,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		67BFDE192598DFB600B0E6CB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		67D7C0DA263C5711004BF0A1 /* coursesDetalis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coursesDetalis.swift; sourceTree = "<group>"; };
+		67D7C0DE263C92DA004BF0A1 /* MultiDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiDatePicker.swift; sourceTree = "<group>"; };
+		67D7C0E0263C92DA004BF0A1 /* MDPMonthYearPickerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDPMonthYearPickerButton.swift; sourceTree = "<group>"; };
+		67D7C0E1263C92DA004BF0A1 /* MDPDayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDPDayView.swift; sourceTree = "<group>"; };
+		67D7C0E2263C92DA004BF0A1 /* MDPMonthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDPMonthView.swift; sourceTree = "<group>"; };
+		67D7C0E3263C92DA004BF0A1 /* MDPContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDPContentView.swift; sourceTree = "<group>"; };
+		67D7C0E4263C92DA004BF0A1 /* MDPMonthYearPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDPMonthYearPicker.swift; sourceTree = "<group>"; };
+		67D7C0E5263C92DA004BF0A1 /* MDPModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDPModel.swift; sourceTree = "<group>"; };
+		67D7C0E6263C92DA004BF0A1 /* MDPDayOfMonth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDPDayOfMonth.swift; sourceTree = "<group>"; };
 		9377AE6CE82235456148A2D9 /* Pods-FirebaseTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTemplate.release.xcconfig"; path = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		B1FD124CAB9AE9745E818900 /* Pods-FirebaseTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTemplate.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate.debug.xcconfig"; sourceTree = "<group>"; };
-		D26B2C602469F2A200470CA2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D2C079A1259813E70053EDFD /* MainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApp.swift; sourceTree = "<group>"; };
 		D2C079AC259815F30053EDFD /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		D2C079B1259816BD0053EDFD /* FirebaseEnv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseEnv.swift; sourceTree = "<group>"; };
@@ -165,6 +183,29 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		67D7C0DD263C92DA004BF0A1 /* MultiDatePicker Source */ = {
+			isa = PBXGroup;
+			children = (
+				67D7C0DE263C92DA004BF0A1 /* MultiDatePicker.swift */,
+				67D7C0DF263C92DA004BF0A1 /* Components */,
+			);
+			path = "MultiDatePicker Source";
+			sourceTree = "<group>";
+		};
+		67D7C0DF263C92DA004BF0A1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				67D7C0E0263C92DA004BF0A1 /* MDPMonthYearPickerButton.swift */,
+				67D7C0E1263C92DA004BF0A1 /* MDPDayView.swift */,
+				67D7C0E2263C92DA004BF0A1 /* MDPMonthView.swift */,
+				67D7C0E3263C92DA004BF0A1 /* MDPContentView.swift */,
+				67D7C0E4263C92DA004BF0A1 /* MDPMonthYearPicker.swift */,
+				67D7C0E5263C92DA004BF0A1 /* MDPModel.swift */,
+				67D7C0E6263C92DA004BF0A1 /* MDPDayOfMonth.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		8378283248B71B8695152817 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +250,7 @@
 			children = (
 				D2C079CB259822000053EDFD /* AddItem.swift */,
 				D2C079CF259822090053EDFD /* ListItems.swift */,
+				67D7C0DA263C5711004BF0A1 /* coursesDetalis.swift */,
 			);
 			path = Item;
 			sourceTree = "<group>";
@@ -236,7 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				D2C079A1259813E70053EDFD /* MainApp.swift */,
-				D26B2C602469F2A200470CA2 /* GoogleService-Info.plist */,
+				67BFDE192598DFB600B0E6CB /* GoogleService-Info.plist */,
 				D2C079A9259815BD0053EDFD /* Views */,
 				D2C079B0259816AA0053EDFD /* Environments */,
 				D2C2705324662CAA005E16A3 /* Models */,
@@ -291,6 +333,7 @@
 		D2C2703524662C5A005E16A3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				67D7C0DD263C92DA004BF0A1 /* MultiDatePicker Source */,
 				D2C2703624662C5A005E16A3 /* Codable.swift */,
 				D2C2703724662C5A005E16A3 /* Keyboard.swift */,
 				D2C2703824662C5A005E16A3 /* Optional.swift */,
@@ -398,10 +441,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67BFDE1A2598DFB600B0E6CB /* GoogleService-Info.plist in Resources */,
 				D2C26FE024662809005E16A3 /* LaunchScreen.storyboard in Resources */,
 				D2C26FDD24662809005E16A3 /* Preview Assets.xcassets in Resources */,
 				D2C26FDA24662809005E16A3 /* Assets.xcassets in Resources */,
-				D26B2C612469F2A200470CA2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,24 +502,33 @@
 				D2C079D0259822090053EDFD /* ListItems.swift in Sources */,
 				D2C079C725981C260053EDFD /* Home.swift in Sources */,
 				D2C2705724662F3F005E16A3 /* Item.swift in Sources */,
+				67D7C0E9263C92DA004BF0A1 /* MDPDayView.swift in Sources */,
+				67D7C0E7263C92DA004BF0A1 /* MultiDatePicker.swift in Sources */,
 				D2C079D9259843330053EDFD /* OptionalState.swift in Sources */,
 				D2C2704B24662C68005E16A3 /* Optional.swift in Sources */,
 				D2C079A2259813E70053EDFD /* MainApp.swift in Sources */,
 				D2C2704924662C68005E16A3 /* Codable.swift in Sources */,
 				D2C2704724662C63005E16A3 /* ValidatePassword.swift in Sources */,
+				67D7C0EB263C92DA004BF0A1 /* MDPContentView.swift in Sources */,
 				D2C079B2259816BD0053EDFD /* FirebaseEnv.swift in Sources */,
+				67D7C0EE263C92DA004BF0A1 /* MDPDayOfMonth.swift in Sources */,
 				D2C079D6259841D10053EDFD /* ItemsEnv.swift in Sources */,
 				D2C2704A24662C68005E16A3 /* Keyboard.swift in Sources */,
 				D2C2704624662C63005E16A3 /* ImageUploader.swift in Sources */,
 				D2C079CC259822010053EDFD /* AddItem.swift in Sources */,
 				D2C079B6259818A20053EDFD /* SignUp.swift in Sources */,
+				67D7C0DB263C5712004BF0A1 /* coursesDetalis.swift in Sources */,
 				D2C2705224662C9A005E16A3 /* User.swift in Sources */,
 				D2C079C225981BDE0053EDFD /* AuthenticationView.swift in Sources */,
+				67D7C0EC263C92DA004BF0A1 /* MDPMonthYearPicker.swift in Sources */,
 				D2C079AD259815F30053EDFD /* SignIn.swift in Sources */,
 				D2C2705024662C73005E16A3 /* NetworkingSignUp.swift in Sources */,
+				67D7C0EA263C92DA004BF0A1 /* MDPMonthView.swift in Sources */,
 				D2C2704524662C63005E16A3 /* ImageLoader.swift in Sources */,
+				67D7C0ED263C92DA004BF0A1 /* MDPModel.swift in Sources */,
 				D2C2704824662C63005E16A3 /* DateFromatter.swift in Sources */,
 				D2C2704F24662C73005E16A3 /* NetowrkableAuth.swift in Sources */,
+				67D7C0E8263C92DA004BF0A1 /* MDPMonthYearPickerButton.swift in Sources */,
 				D2C2704D24662C6E005E16A3 /* NetworkingImages.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -25,10 +25,10 @@ struct Home: View {
     var body: some View {
         NavigationView {
             Form {
-                Section(footer: Text("you are signed in!") , content: {
-                    NavigationLink("Add a new item", destination: AddItem()
+                Section(footer: Text("") , content: {
+                    NavigationLink("Add a new course", destination: AddItem()
                                     .environmentObject(itemsEnvironment))
-                    NavigationLink("List all items", destination: ListItems()
+                    NavigationLink("List all courses", destination: ListItems()
                                     .environmentObject(itemsEnvironment))
                 })
             }

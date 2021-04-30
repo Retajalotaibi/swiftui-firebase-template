@@ -28,6 +28,7 @@ extension Networking{
         print("👱🏻‍♂️ Creating user ...")
         Auth.auth().createUser(withEmail: user.email, password: password) { (result, error) in
             guard (error == nil) else {
+                print("FAIL ",error)
                 DispatchQueue.main.async{
                     fail?()
                 }

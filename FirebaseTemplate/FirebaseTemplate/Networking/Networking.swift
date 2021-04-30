@@ -89,8 +89,33 @@ class Networking// : Networkable
             }
         }
     }
-    
-    
+    static func createItemDoc<T:Codable>(_ item: T, inCollection COLLECTION_NAME: String, documentName: String? = nil, success: @escaping()-> Void)
+    {
+        let encoded = try! FirestoreEncoder().encode(item)
+        var docRef: DocumentReference
+        let ref = Firestore
+            .firestore()
+            .collection(COLLECTION_NAME)
+        if let documentName = documentName{
+            docRef = ref.document(documentName)
+        }else{
+            docRef = ref.document()
+        }
+            docRef
+            .setData(encoded) { (error) in
+                if error == nil{
+                    // ✅
+                    print("Added ")
+                    DispatchQueue.main.async {
+                        success()
+                    }
+                }
+                else{
+                    // ❌
+                    print("Error encountered", error)
+                }
+        }
+    }
     static func getSingleDocument<T: Codable>(_ DOCUMENT_PATH: String, success: @escaping(T)-> Void)
     {
         getSingleDocument(DOCUMENT_PATH, success: success) { error in}
