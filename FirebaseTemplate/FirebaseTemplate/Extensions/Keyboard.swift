@@ -33,3 +33,16 @@ extension View {
         }
     }
 }
+
+extension String {
+    var dateFromString: Date? {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ssZ"
+        return formatter.date(from: self)
+    }
+}
+var dateFormatter: DateFormatter {
+    let formatter = DateFormatter()
+    formatter.dateFormat = "yyyy-MM-dd"
+    return formatter
+}

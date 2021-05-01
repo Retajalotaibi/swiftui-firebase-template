@@ -8,10 +8,10 @@
 
 import SwiftUI
 
-
 struct AddItem: View {
     @EnvironmentObject var itemsEnv: ItemsEnv
     @State var itemName: String = ""
+    @State var id: String = ""
     @State var itemPrice: String = ""
     @State private var startDay = Date()
     @State private var endDay = Date()
@@ -25,7 +25,7 @@ struct AddItem: View {
     var body: some View {
         VStack {
             TextField("course name", text: $itemName)
-
+            TextField("id", text: $id)
             DatePicker("course start at",selection: $startDay, displayedComponents: .date).foregroundColor(.secondary)
             DatePicker("course end at",selection: $endDay, displayedComponents: .date).foregroundColor(.secondary)
             Button(action: {
@@ -33,8 +33,8 @@ struct AddItem: View {
                 self.formattedStartDay = dateFormatter.string(from: startDay)
                 self.formattedEndDay = dateFormatter.string(from: endDay)
                 print("❌\(self.formattedStartDay), \(self.formattedEndDay) ,😳 \(itemName) ")
-                let course = Course(name: itemName, startDay: formattedStartDay, endDay: formattedEndDay)
-
+                let course = Course(id: id, name: itemName, startDay: formattedStartDay, endDay: formattedEndDay)
+             
                 itemsEnv.addItem(item: course)
 
             }, label: {

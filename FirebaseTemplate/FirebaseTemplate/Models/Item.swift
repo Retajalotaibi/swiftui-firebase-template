@@ -15,21 +15,34 @@ struct Item: Codable, Hashable{
 }
 
 struct Course: Codable, Hashable {
+    var id: String
     var name: String
     var startDay: String
     var endDay: String
-//    var classed: [Classes]
+//   var classed: [Classes]
+//    enum CodingKeys: String, CodingKey {
+//        case name ,startDay,endDay
+//    }
 }
 
-struct Classes: Codable, Hashable {
+struct Classes: Identifiable,Codable, Hashable {
+    var id: String
     var name : String
     var color: String
     var dates: [String]
-    var time: String
-//    var tasks: [Tasks]
+    var time: [String]
+//    enum CodingKeys: String, CodingKey {
+//        case name ,color,dates,time
+//    }
 }
 
-struct Tasks: Codable, Hashable  {
+struct Tasks:Codable, Hashable  {
     var taskName: String
     var due: String
+
+}
+
+struct Notifications : Codable, Hashable{
+    var leacterTime: [String]
+    var taskDueAt: String
 }

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,11 @@
 		67D7C0EC263C92DA004BF0A1 /* MDPMonthYearPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D7C0E4263C92DA004BF0A1 /* MDPMonthYearPicker.swift */; };
 		67D7C0ED263C92DA004BF0A1 /* MDPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D7C0E5263C92DA004BF0A1 /* MDPModel.swift */; };
 		67D7C0EE263C92DA004BF0A1 /* MDPDayOfMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D7C0E6263C92DA004BF0A1 /* MDPDayOfMonth.swift */; };
+		67D7C0F5263CCDD7004BF0A1 /* tasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D7C0F4263CCDD7004BF0A1 /* tasksView.swift */; };
+		67D7C0FB263CDD95004BF0A1 /* calender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D7C0FA263CDD95004BF0A1 /* calender.swift */; };
+		67D7C100263CE16F004BF0A1 /* ElegantCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 67D7C0FF263CE16F004BF0A1 /* ElegantCalendar */; };
+		67D7C125263D2DD0004BF0A1 /* KVKCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 67D7C124263D2DD0004BF0A1 /* KVKCalendar */; };
+		67D7C129263D3A22004BF0A1 /* CalendarKit in Frameworks */ = {isa = PBXBuildFile; productRef = 67D7C128263D3A22004BF0A1 /* CalendarKit */; };
 		D2C079A2259813E70053EDFD /* MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C079A1259813E70053EDFD /* MainApp.swift */; };
 		D2C079AD259815F30053EDFD /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C079AC259815F30053EDFD /* SignIn.swift */; };
 		D2C079B2259816BD0053EDFD /* FirebaseEnv.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C079B1259816BD0053EDFD /* FirebaseEnv.swift */; };
@@ -81,6 +86,8 @@
 		67D7C0E4263C92DA004BF0A1 /* MDPMonthYearPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDPMonthYearPicker.swift; sourceTree = "<group>"; };
 		67D7C0E5263C92DA004BF0A1 /* MDPModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDPModel.swift; sourceTree = "<group>"; };
 		67D7C0E6263C92DA004BF0A1 /* MDPDayOfMonth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDPDayOfMonth.swift; sourceTree = "<group>"; };
+		67D7C0F4263CCDD7004BF0A1 /* tasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tasksView.swift; sourceTree = "<group>"; };
+		67D7C0FA263CDD95004BF0A1 /* calender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calender.swift; sourceTree = "<group>"; };
 		9377AE6CE82235456148A2D9 /* Pods-FirebaseTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTemplate.release.xcconfig"; path = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		B1FD124CAB9AE9745E818900 /* Pods-FirebaseTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTemplate.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 		D2C079A1259813E70053EDFD /* MainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApp.swift; sourceTree = "<group>"; };
@@ -150,12 +157,15 @@
 				D2C2702924662A79005E16A3 /* PromisesObjC.framework in Frameworks */,
 				D2C2702224662A79005E16A3 /* GoogleAppMeasurement.framework in Frameworks */,
 				D2C2702D24662A79005E16A3 /* gRPC-C++.framework in Frameworks */,
+				67D7C129263D3A22004BF0A1 /* CalendarKit in Frameworks */,
 				D2C2702A24662A79005E16A3 /* nanopb.framework in Frameworks */,
 				D2C2702C24662A79005E16A3 /* abseil.framework in Frameworks */,
 				D2C2702B24662A79005E16A3 /* leveldb-library.framework in Frameworks */,
 				D2C2702424662A79005E16A3 /* FirebaseCore.framework in Frameworks */,
+				67D7C125263D2DD0004BF0A1 /* KVKCalendar in Frameworks */,
 				D2C2702724662A79005E16A3 /* BoringSSL-GRPC.framework in Frameworks */,
 				D2C2702324662A79005E16A3 /* GTMSessionFetcher.framework in Frameworks */,
+				67D7C100263CE16F004BF0A1 /* ElegantCalendar in Frameworks */,
 				D2C2702124662A79005E16A3 /* FirebaseFirestore.framework in Frameworks */,
 				D2C27015246628E5005E16A3 /* libc++.tbd in Frameworks */,
 				D2C2702524662A79005E16A3 /* FirebaseAnalytics.framework in Frameworks */,
@@ -222,6 +232,7 @@
 				D2C079C625981C260053EDFD /* Home.swift */,
 				D2C079C9259821F40053EDFD /* Item */,
 				D2C079C425981C1A0053EDFD /* Authentication */,
+				67D7C0FA263CDD95004BF0A1 /* calender.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -251,6 +262,7 @@
 				D2C079CB259822000053EDFD /* AddItem.swift */,
 				D2C079CF259822090053EDFD /* ListItems.swift */,
 				67D7C0DA263C5711004BF0A1 /* coursesDetalis.swift */,
+				67D7C0F4263CCDD7004BF0A1 /* tasksView.swift */,
 			);
 			path = Item;
 			sourceTree = "<group>";
@@ -399,6 +411,11 @@
 			dependencies = (
 			);
 			name = FirebaseTemplate;
+			packageProductDependencies = (
+				67D7C0FF263CE16F004BF0A1 /* ElegantCalendar */,
+				67D7C124263D2DD0004BF0A1 /* KVKCalendar */,
+				67D7C128263D3A22004BF0A1 /* CalendarKit */,
+			);
 			productName = FirebaseTemplate;
 			productReference = D2C26FD024662807005E16A3 /* FirebaseTemplate.app */;
 			productType = "com.apple.product-type.application";
@@ -427,6 +444,11 @@
 				Base,
 			);
 			mainGroup = D2C26FC724662807005E16A3;
+			packageReferences = (
+				67D7C0FE263CE16F004BF0A1 /* XCRemoteSwiftPackageReference "ElegantCalendar" */,
+				67D7C123263D2DD0004BF0A1 /* XCRemoteSwiftPackageReference "KVKCalendar" */,
+				67D7C127263D3A22004BF0A1 /* XCRemoteSwiftPackageReference "CalendarKit" */,
+			);
 			productRefGroup = D2C26FD124662807005E16A3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -502,9 +524,11 @@
 				D2C079D0259822090053EDFD /* ListItems.swift in Sources */,
 				D2C079C725981C260053EDFD /* Home.swift in Sources */,
 				D2C2705724662F3F005E16A3 /* Item.swift in Sources */,
+				67D7C0F5263CCDD7004BF0A1 /* tasksView.swift in Sources */,
 				67D7C0E9263C92DA004BF0A1 /* MDPDayView.swift in Sources */,
 				67D7C0E7263C92DA004BF0A1 /* MultiDatePicker.swift in Sources */,
 				D2C079D9259843330053EDFD /* OptionalState.swift in Sources */,
+				67D7C0FB263CDD95004BF0A1 /* calender.swift in Sources */,
 				D2C2704B24662C68005E16A3 /* Optional.swift in Sources */,
 				D2C079A2259813E70053EDFD /* MainApp.swift in Sources */,
 				D2C2704924662C68005E16A3 /* Codable.swift in Sources */,
@@ -749,6 +773,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		67D7C0FE263CE16F004BF0A1 /* XCRemoteSwiftPackageReference "ElegantCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ThasianX/ElegantCalendar";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		67D7C123263D2DD0004BF0A1 /* XCRemoteSwiftPackageReference "KVKCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kvyatkovskys/KVKCalendar";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		67D7C127263D3A22004BF0A1 /* XCRemoteSwiftPackageReference "CalendarKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/richardtop/CalendarKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		67D7C0FF263CE16F004BF0A1 /* ElegantCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67D7C0FE263CE16F004BF0A1 /* XCRemoteSwiftPackageReference "ElegantCalendar" */;
+			productName = ElegantCalendar;
+		};
+		67D7C124263D2DD0004BF0A1 /* KVKCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67D7C123263D2DD0004BF0A1 /* XCRemoteSwiftPackageReference "KVKCalendar" */;
+			productName = KVKCalendar;
+		};
+		67D7C128263D3A22004BF0A1 /* CalendarKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67D7C127263D3A22004BF0A1 /* XCRemoteSwiftPackageReference "CalendarKit" */;
+			productName = CalendarKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D2C26FC824662807005E16A3 /* Project object */;
 }

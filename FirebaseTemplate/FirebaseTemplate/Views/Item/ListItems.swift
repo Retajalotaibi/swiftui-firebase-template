@@ -14,7 +14,7 @@ struct ListItems: View {
     var body: some View {
         List(itemsEnv.course, id: \.self){ item in
             NavigationLink(
-                destination: coursesDetalis(currentCorses: item),
+                destination: coursesDetalis(currentCorses: item).environmentObject(ItemsEnv()),
                 label: {
                     VStack(alignment: .leading){
                         Text(item.name).fontWeight(.bold)
